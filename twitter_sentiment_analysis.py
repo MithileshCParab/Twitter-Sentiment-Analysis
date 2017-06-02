@@ -12,10 +12,10 @@ class TwitterClient(object):
         Class constructor or initialization method.
         '''
         # keys and tokens from the Twitter Dev Console
-        consumer_key='LIiUlXK4XflQARAEqmBLtIFM6'
-        consumer_secret='DUOfrAK3w68zQwsaLVLzdvYVveyfOIzRWXv7sF3HxmqLPZYX7G'
-        access_token='3301746614-MZO2CWTlOKtZDFTnRbtZvXw4RU9PAhjt9SFAjWc'
-        access_token_secret='Z4d24H2SszHxSK9KdlngQHmCw4N6MRJtZotiIuzcXDzN3'
+        consumer_key=''
+        consumer_secret=''
+        access_token=''
+        access_token_secret=''
  
         # attempt authentication
         try:
@@ -90,7 +90,7 @@ def main():
     # creating object of TwitterClient Class
     api = TwitterClient()
     # calling function to get tweets
-    query='Sachin Tendulkar'
+    query=''
     tweets = api.get_tweets(query = query, count = 200)
     print("Query : ",query)
  
